@@ -1,7 +1,7 @@
-import leap
 import time
 import mido
 import sys
+import leap
 
 # --- Configuration ---
 MIDI_PORT_NAME = 'USB MIDI Interface 1'
@@ -13,7 +13,7 @@ RIGHT_HAND_NOTE = 62
 RIGHT_HAND_CHANNEL = 9
 RIGHT_HAND_CC = 74
 
-class RobustMidiController(leap.Listener):
+class RobustMidiController(Listener):
     def __init__(self, port):
         super().__init__()
         self.port = port
